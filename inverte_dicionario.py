@@ -15,3 +15,11 @@ frutas = {'apple' : 'maçã', 'strawberry' : 'morango',
 fruta_invertida = inverte(frutas)
 
 print(fruta_invertida)
+
+try: 
+    print(fruta_invertida['banana'])
+except KeyError as erro:
+    print("Chave não encontrada, avise o desenvolvedor")
+    #envie um email para anaclaraguimaraesremotto@gmail.com
+    #com o conteúdo do erro
+    print(erro)
