@@ -6,9 +6,10 @@ frase = input("Informe o texto: ")
 frase = frase.lower()
 
 for letra in frase:
-    if letra in contagem:
-        contagem[letra] = contagem[letra] + 1
-    else: 
+    if letra != ' ':
+        if letra in contagem:
+            contagem[letra] = contagem[letra] + 1
+        else: 
             contagem[letra] = 1
 
 for chave in contagem:
